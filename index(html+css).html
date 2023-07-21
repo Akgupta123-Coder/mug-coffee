@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            background-color: bisque;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width:550px;
+            height:300px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 3px 3px 9px gray;
+
+            display: flex;
+            flex-direction: row;
+        }
+        .img-section img{
+            width: 225px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .text-section{
+            width:325px;
+            height:300px;
+            /* border: 2px solid black; */
+            
+
+            display: flex;
+            flex-direction: column;
+            padding: 0.5em 1em;
+            gap:20px;
+
+        }
+        .product{
+            color: gray;
+            letter-spacing: 2px;
+        }
+        .heading{
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        .description{
+            color: gray;
+            text-align: left;
+        }
+        .amount .green_text{
+            color: green;
+            margin-right: 2rem;
+        }
+        .strike{
+            text-decoration: line-through;
+        }
+        .btn{
+            width: 95%;
+            height:2.4rem;
+            border-radius: 10px;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+        }
+        .btn img{
+            margin-right: 2rem;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="card">
+
+                <div class="img-section">
+                   <img src="mug.jpg" alt="">
+                </div>
+
+                <div class="text-section">
+
+                        <p class="product">COFFEE MUG</p>
+                        <h2 class="heading">White Coffee Mug</h2>
+                        <p class="description">"Coffee Mug are designed to express emotions.These are accalimed for their 
+                            designs and superior quality."
+                        </p>
+                        <p class="amount">
+                            <span class="heading green_text">₹149</span>
+                            <span class="description strike">₹230</span>
+                        </p>
+
+                        <button class="btn">
+                            <img src="icon-cart.png" alt="">
+                            Add to cart
+                        </button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
